@@ -7,7 +7,7 @@ class SistemaLogistica:
     def adicionar_tarefa(self, descricao):
         if not descricao:
             return "Erro: Descrição vazia"
-        tarefa = {"id": len(self.tarefas) + 1, "descricao": descricao, "status": "A Fazer"}
+        tarefa = {"id": len(self.tarefas) + 1, "descricao": descricao, "status": "A Fazer", "prioridade": "Normal"}
         self.tarefas.append(tarefa)
         return tarefa
 
